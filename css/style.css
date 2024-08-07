@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   color: #f0f0f0;
-  font-size: 32px;
+  font-size: 24px;
     padding-left: 2%;
 }
 
@@ -246,20 +246,12 @@ a:hover, a:active, a:focus {
      padding-top: 10px;
   }
 
-.navbar-default .navbar-toggle .icon-bar {
-  }
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { 
-}
-
-
 /*---------------------------------------
     Home section              
 -----------------------------------------*/
 
 #home {
-    background: #535bd4 url('../images/home-bg.jpg') no-repeat;
+    background: #535bd4 url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXp2eW1jdXFsb3M5c3EwOGE0NWQ4a29xcW5lcmd4Ym5jMTFlbHl3eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1ZoidbMDkySJDRE4bP/giphy.gif) no-repeat;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
@@ -288,7 +280,7 @@ a:hover, a:active, a:focus {
 }
 
 #home .overlay {
-  background: #00dee0; 
+  /* background: #00dee0;  */
   background: -webkit-linear-gradient(to left, #4776E6 , #8E54E9); 
   background: linear-gradient(to left, #4776E6 , #8E54E9); 
   opacity: 0.9;
@@ -366,10 +358,10 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
     Screenshot section              
 -----------------------------------------*/
-#screenshot
-{
-    background: #535bd4;
+#screenshot {
+  background: #535bd4;
 }
+
 #screenshot .col-md-3 {
   display: block;
   width: 100%;
@@ -382,8 +374,11 @@ a:hover, a:active, a:focus {
   border-radius: 2px;
   cursor: pointer;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Cover the fixed height while maintaining aspect ratio */
   position: relative;
   top: 0px;
   transition: all 0.4s ease-in-out;
@@ -394,56 +389,62 @@ a:hover, a:active, a:focus {
   top: -6px;
 }
 
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-  -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-  opacity: 1;
-}
-
-.mfp-with-zoom.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-
-
 /*---------------------------------------
-   Pricing section         
+   Project section         
 -----------------------------------------*/
 
+/* Project Section */
 #project {
   background: #222;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-.thumbnail
-{
-    background-color: #222;
+
+.thumbnail {
+  background-color: #222;
+  border: none;
+  margin-bottom: 20px;
 }
- .thumbnail h3
-{
-    text-align: center;
-    color: #222;
+
+.thumbnail h3 {
+  text-align: center;
+  color: #fff; /* Changed to white for better readability */
 }
-.thumbnail p
-{
-    text-align: center;
-    color: #222;
+
+.thumbnail p {
+  text-align: center;
+  color: #fff; /* Changed to white for better readability */
 }
-.caption
-{
-    background-color: #535bd4;
+
+.thumbnail img {
+  display: block;
+  margin: 0 auto;
+  height: 150px; /* Set a specific height for all images */
+  width: 100%; /* Set width to fill the container */
+  object-fit: cover; /* This will crop the image to fit the container */
 }
+
+.caption {
+  background-color: #535bd4;
+  padding: 15px; /* Added padding for spacing */
+  border-radius: 5px; /* Added border-radius for a rounded corner effect */
+}
+
+.thumbnail .btn {
+  margin: 5px 0;
+}
+
+.additional-projects {
+  display: none; /* Hide additional projects by default */
+}
+
+#view-more, #view-less {
+  margin-top: 20px;
+}
+
+
+
+
 
 
 
